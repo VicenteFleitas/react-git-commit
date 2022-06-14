@@ -32,7 +32,8 @@ function App() {
                       ></img>
                     </Col>
                     <Col className="text-muted">
-                      {c.commit.author.name} committed on {c.commit.author.date}
+                      {c.commit.author.name} committed on{" "}
+                      {c.commit.author.date.split("T")[0]}
                     </Col>
                   </Row>
                 </Col>
